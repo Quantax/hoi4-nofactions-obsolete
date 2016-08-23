@@ -16,8 +16,6 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.5
 			}
-			rule = {
-			}
 		}
 		
 		general_staff = {
@@ -52,8 +50,6 @@ ideas = {
 			modifier = {
 				political_power_gain = 1
 				drift_defence_factor = 0.5
-			}
-			rule = {
 			}
 		}
 		

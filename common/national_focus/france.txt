@@ -1339,9 +1339,7 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
-		completion_reward = {
-			set_rule = { }
-		}
+		completion_reward = { }
 	}	
 
 	focus = {
@@ -1404,7 +1402,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_national_unity = 0.05
-			set_rule = { }
 			if = {
 				limit = {
 					CZE = { 
@@ -1792,9 +1789,7 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
-		completion_reward = {
-			set_rule = { }
-		}
+		completion_reward = { }
 	}
 
 	focus = {

@@ -348,9 +348,6 @@ ideas = {
 
 			picture = generic_pp_unity_bonus
 			
-			rule = {
-				can_join_opposite_factions = no
-			}
 			modifier = {
 				drift_defence_factor = 0.2
 				ai_badass_factor = 0.03 # cares for 3% of normal threat

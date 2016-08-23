@@ -1693,7 +1693,6 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_political_power = 120
-			set_rule = { }
 
 			if = {
 				limit = {

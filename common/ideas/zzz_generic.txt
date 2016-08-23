@@ -306,8 +306,6 @@ ideas = {
 
 			picture = generic_pp_unity_bonus
 	
-			rule = { }
-	
 			modifier = {
 				unity_factor = 0.05
 				army_core_attack_factor = 0.1
