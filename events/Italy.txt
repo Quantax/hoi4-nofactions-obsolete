@@ -260,7 +260,6 @@ country_event = {
 		FRA = {
 			if = {
 				limit = { is_in_faction = no }
-				set_rule = { }
 			}
 		}
 		FRA = {	add_to_faction = ITA }

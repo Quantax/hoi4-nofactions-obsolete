@@ -1054,7 +1054,6 @@ country_event = {
 				}
 				NOT = { is_in_faction_with = CZE }
 			}
-			set_rule = { }
 			CZE = {
 				add_ai_strategy = {
 					type = alliance

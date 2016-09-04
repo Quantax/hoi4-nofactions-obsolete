@@ -1513,7 +1513,6 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			set_rule = { }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.214 }
 			}

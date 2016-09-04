@@ -201,8 +201,6 @@ ideas = {
 				drift_defence_factor = 0.5
 				production_speed_buildings_factor = -0.1
 			}
-			rule = {
-			}
 		}
 
 		trotskyite_plot = {
