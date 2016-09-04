@@ -92,7 +92,10 @@ focus_tree = {
 	}
 	focus = {
 		id = maud_focus
-		available = { is_in_faction_with = USA }
+		available = { 
+			NOT = { has_war_with = USA }
+			USA = { has_opinion = { target = UK value > 99 }}
+		}
 		prerequisite = { focus = tizard_mission_focus }
 		icon = GFX_focus_wonderweapons
 		x = 0
@@ -2695,7 +2698,7 @@ focus_tree = {
 		id = uk_india_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = RAJ
+			NOT = { has_war_with = RAJ }
 		} 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 21
@@ -2831,7 +2834,7 @@ focus_tree = {
 		id = uk_australia_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = AST
+			NOT = { has_war_with = AST }
 		}
 
 		bypass = {
@@ -2974,7 +2977,7 @@ focus_tree = {
 		id = uk_new_zealand_focus 
 		prerequisite = { focus = uk_australia_focus }
 		available = {
-			is_in_faction_with = NZL
+			NOT = { has_war_with = NZL }
 		} 
 		icon = GFX_goal_generic_construction
 		x = 23
@@ -3113,7 +3116,7 @@ focus_tree = {
 		id = uk_canada_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = CAN
+			NOT = { has_war_with = CAN }
 		} 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 22
@@ -3251,7 +3254,7 @@ focus_tree = {
 		id = uk_south_africa_focus
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = SAF
+			NOT = { has_war_with = SAF }
 		} 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 24
