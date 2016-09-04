@@ -1891,11 +1891,11 @@ focus_tree = {
 		prerequisite = { focus = ideological_fanaticism focus = why_we_fight }
 		available = {
 			has_war = yes
-			is_in_faction = yes
+			has_war_together_with = any_country
 			OR = {
 				num_of_factories > 50
 				any_country = {
-					is_in_faction_with = ROOT
+					has_war_together_with = ROOT
 					num_of_factories > 50
 				}
 			}
