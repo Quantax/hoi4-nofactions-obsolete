@@ -2060,7 +2060,7 @@ focus_tree = {
 		prerequisite = { focus = ideological_fanaticism focus = why_we_fight }
 		available = {
 			has_war = yes
-			has_war_together_with = any_other_country
+			any_other_country = { has_war_together_with = ROOT }
 			OR = {
 				num_of_factories > 50
 				any_other_country = {

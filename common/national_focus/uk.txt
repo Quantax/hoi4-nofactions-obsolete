@@ -97,7 +97,7 @@ focus_tree = {
 		id = maud_focus
 		available = { 
 			NOT = { has_war_with = USA }
-			USA = { has_opinion = { target = UK value > 99 }}
+			USA = { has_opinion = { target = ENG value > 99 }}
 		}
 		prerequisite = { focus = tizard_mission_focus }
 		icon = GFX_focus_wonderweapons

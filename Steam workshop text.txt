@@ -24,7 +24,7 @@ No balance work has been done yet, and AI might break or do silly things because
 ---
 
 [h1]Updates:[/h1]
- - Update 2: Updated to HOI version 1.2
+ - Update 2: Updated to HOI version 1.2, fixed Technology Sharing in generic focus tree
  - Update 1: Removed faction checks from national focus trees.
  - Initial release
 
