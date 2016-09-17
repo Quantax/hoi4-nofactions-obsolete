@@ -1,0 +1,39 @@
+This mod removes all starting factions and the abilities to create new ones.
+
+National focuses and events that create factions or invite countries to factions can still trigger if prerequisites are met but no factions are formed.
+
+No balance work has been done yet, and AI might break or do silly things because there are no factions.
+
+---
+
+[h1]What this mod does:[/h1]
+ - Removes faction creating ability from national spirits of Germany, USSR, UK and USA.
+ - Removes all faction creation from national focuses of France, Italy, Poland and generic focus.
+ - Removes all faction creating from events, such as unified China
+
+---
+
+[h1]Known issues:[/h1]
+ - Some events will not trigger
+ - Some national focuses, especially for France, are pretty much useless
+
+---
+[h1]Reporting issues:[/h1]
+ - Before reporting issues with this mod (e.g. "AI created a faction") make sure you do not have any other mod that modifies things listed in the compatibility section.
+
+---
+
+[h1]Updates:[/h1]
+ - Update 2: Updated to HOI version 1.2
+ - Update 1: Removed faction checks from national focus trees.
+ - Initial release
+
+---
+
+[h1]Mod compatibility:[/h1]
+ - NOT compatible with mods that modify national focus trees for France, Germany, Italy, Poland, UK or the generic focus tree.
+ - NOT compatible with mods that modify existing national spirits of Germany, USSR, UK and USA.
+ - NOT compatible with mods that modify existing events for France, Germany, Italy or China.
+ - NOT compatible with mods that modify starting conditions for Germany, USSR or UK (i.e. the major faction leaders)
+
+ - Compatible with other focus mods that modify focus trees not listed above, i.e. most minor nations. Be aware that balance issues are likely since modified nation(s) is most likely the only one able to create factions.
