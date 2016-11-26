@@ -211,7 +211,7 @@ country_event = {
 	
 	option = {
 		name = germany.12.a	#neat
-		every_country = {
+		every_other_country = {
 			limit = {
 				NOT = { tag = GER }
 				has_government = fascism 
@@ -278,7 +278,7 @@ country_event = {
 				}
 			}
 			OR = {
-				any_country = {
+				any_other_country = {
 					is_in_faction_with = GER
 					GER = {
 						is_faction_leader = yes
@@ -323,7 +323,7 @@ country_event = {
 				96 = {
 					OR = {
 						is_controlled_by = GER
-						any_country = {
+						any_other_country = {
 							controls_state = 96
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
@@ -338,7 +338,7 @@ country_event = {
 				95 = {
 					OR = {
 						is_controlled_by = GER
-						any_country = {
+						any_other_country = {
 							controls_state = 95
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
@@ -353,7 +353,7 @@ country_event = {
 				94 = {
 					OR = {
 						is_controlled_by = GER
-						any_country = {
+						any_other_country = {
 							controls_state = 94
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
@@ -368,7 +368,7 @@ country_event = {
 				93 = {
 					OR = {
 						is_controlled_by = GER
-						any_country = {
+						any_other_country = {
 							controls_state = 93
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
@@ -383,7 +383,7 @@ country_event = {
 				91 = {
 					OR = {
 						is_controlled_by = GER
-						any_country = {
+						any_other_country = {
 							controls_state = 91
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
@@ -398,7 +398,7 @@ country_event = {
 				97 = {
 					OR = {
 						is_controlled_by = GER
-						any_country = {
+						any_other_country = {
 							controls_state = 97
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
@@ -413,7 +413,7 @@ country_event = {
 				89 = {
 					OR = {
 						is_controlled_by = GER
-						any_country = {
+						any_other_country = {
 							controls_state = 89
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
@@ -793,8 +793,7 @@ country_event = {
 	option = { # Refuse
 		name = germany.28.b
 		ai_chance = {
-			base = 10 
-
+			base = 10			
 			modifier = {
 				factor = 0
 				GER = { has_army_size = { size > 39 } }
@@ -958,7 +957,7 @@ country_event = {
 				is_in_faction_with = CZE
 				is_faction_leader = no
 			}
-			random_country = {
+			random_other_country = {
 				limit = {
 					is_in_faction_with = FRA
 					is_faction_leader = yes
@@ -2019,7 +2018,7 @@ country_event = {
 			limit = {
 				FRA = { is_faction_leader = yes }
 			}
-			every_country = {
+			every_other_country = {
 				limit = { is_in_faction_with = FRA NOT = { has_war_with = ENG } }
 				ENG = { add_to_faction = PREV }
 				add_ai_strategy = {
@@ -2701,7 +2700,7 @@ country_event = {
 				has_war_with = ENG
 			}
 			NOT = {
-				any_country = {
+				any_other_country = {
 					is_in_faction_with = ENG
 					has_war_with = TUR
 				}
@@ -2803,7 +2802,7 @@ country_event = {
 					is_in_faction_with = POL
 					is_faction_leader = no
 				}
-				random_country = {
+				random_other_country = {
 					limit = { 
 						is_in_faction_with = GER
 						is_faction_leader = yes
@@ -2924,11 +2923,11 @@ country_event = {
 
 	option = {
 		name = germany.84.a
-		every_country = {
+		every_other_country = {
 			limit = {
 				has_idea = anti_soviet_pact
 				NOT = { has_war_with = SOV }
-				any_country = {
+				any_other_country = {
 					has_idea = anti_soviet_pact
 					has_war_with = SOV
 				}
@@ -3029,7 +3028,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.1
-				any_country = {
+				any_other_country = {
 					is_major = yes
 					is_in_faction_with = POL
 				}
@@ -3048,7 +3047,7 @@ country_event = {
 					is_in_faction_with = POL
 					is_faction_leader = no
 				}
-				random_country = {
+				random_other_country = {
 					limit = { 
 						is_in_faction_with = GER
 						is_faction_leader = yes
@@ -3120,7 +3119,7 @@ country_event = {
 		name = germany.89.a
 		dismantle_faction = yes
 		add_national_unity = -0.1
-		every_country = {
+		every_other_country = {
 			limit = {
 				OR = {
 					AND = {
@@ -3147,14 +3146,13 @@ country_event = {
 			}
 			add_national_unity = -0.2
 			add_named_threat = { threat = 5 name = germany.89.t }
-			every_country = {
+			every_other_country = {
 				limit = {
-					NOT = { tag = GER }
 					has_government = fascism 
 				}
 				add_opinion_modifier = { target = GER modifier = communist_collaborators }
 			}
-			every_country = {
+			every_other_country = {
 				limit = {
 					has_government = democratic 
 				}
@@ -3399,7 +3397,7 @@ country_event = {
 				YUG = {
 					OR = {
 						is_in_faction = yes
-						any_country = {
+						any_other_country = {
 							has_guaranteed = YUG								
 						}
 					}
@@ -3420,7 +3418,7 @@ country_event = {
 				YUG = { 
 					is_in_faction = no
 					NOT = {
-						any_country = {
+						any_other_country = {
 							has_guaranteed = YUG								
 						}
 					}
@@ -3456,7 +3454,7 @@ country_event = {
 				YUG = {
 					OR = {
 						is_in_faction = yes
-						any_country = {
+						any_other_country = {
 							has_guaranteed = YUG								
 						}
 					}
@@ -3492,7 +3490,7 @@ country_event = {
 				YUG = { 
 					is_in_faction = no
 					NOT = {
-						any_country = {
+						any_other_country = {
 							has_guaranteed = YUG								
 						}
 					}
@@ -3534,7 +3532,7 @@ country_event = {
 				YUG = {
 					OR = {
 						is_in_faction = yes
-						any_country = {
+						any_other_country = {
 							has_guaranteed = YUG								
 						}
 					}
@@ -3576,7 +3574,7 @@ country_event = {
 				YUG = { 
 					is_in_faction = no
 					NOT = {
-						any_country = {
+						any_other_country = {
 							has_guaranteed = YUG								
 						}
 					}
@@ -3842,7 +3840,7 @@ country_event = {
 			has_global_flag = ITA_claims_on_france_1
 		}
 		clr_global_flag = ITA_claims_on_france_1
-		random_country = {
+		random_other_country = {
 			limit = {
 				original_tag = FRA
 				has_government = fascism
@@ -3860,7 +3858,7 @@ country_event = {
 			NOT = { has_global_flag = ITA_claims_on_france_735 }
 			has_global_flag = ITA_claims_on_france_1
 		}
-		random_country = {
+		random_other_country = {
 			limit = {
 				original_tag = FRA
 				has_government = fascism
@@ -3878,7 +3876,7 @@ country_event = {
 			has_global_flag = ITA_claims_on_france_735
 			NOT = { has_global_flag = ITA_claims_on_france_1 }
 		}
-		random_country = {
+		random_other_country = {
 			limit = {
 				original_tag = FRA
 				has_government = fascism
@@ -3896,7 +3894,7 @@ country_event = {
 			has_global_flag = ITA_claims_on_france_735
 			has_global_flag = ITA_claims_on_france_1
 		}
-		random_country = {
+		random_other_country = {
 			limit = {
 				original_tag = FRA
 				has_government = fascism
@@ -3963,7 +3961,7 @@ country_event = {
 		BUL = {
 			add_opinion_modifier = { target = GER modifier = GER_treaty_of_craiova_GER }
 
-			every_country = {
+			every_other_country = {
 				limit = { 
 					is_faction_leader = yes 
 					NOT = { tag = GER }
@@ -4120,7 +4118,7 @@ country_event = {
 	hidden = yes
 	
 	immediate = {
-		every_country = {
+		every_other_country = {
 			limit = { has_idea = anti_soviet_pact }
 			add_opinion_modifier = { target = FROM modifier = anti_soviet_pact_call_refused }
 		}

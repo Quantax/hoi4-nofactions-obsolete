@@ -1,4 +1,4 @@
-capital = 126
+﻿capital = 126
 
 oob = "ENG_1936"
 
@@ -182,6 +182,8 @@ set_politics = {
 }
 
 ## THIS IS WHERE BRITAIN USUALLY CREATES THE "ALLIES" FACTION...
+puppet = RAJ
+give_military_access = RAJ
 
 #give_guarantee = CZE
 
