@@ -769,7 +769,6 @@ country_event = {
 		ai_chance = { factor = 0 }
 		name = china.101.b
 		CHI = { 
-			add_to_faction = ROOT 
 			country_event = china.106
 		}
 		#Nothing
@@ -846,7 +845,6 @@ country_event = {
 				is_in_faction = no
 			}
 		}
-		CHI = { add_to_faction = ROOT }
 	}
 	option = {
 		ai_chance = { 
@@ -914,7 +912,6 @@ country_event = {
 		set_country_flag = PRC_joined_CHI_against_JAP
 		CHI = {
 			country_event = china.106
-			add_to_faction = ROOT
 			PRC = { add_opinion_modifier = { target = CHI modifier = unstable_alliance } }
 			CHI = { add_opinion_modifier = { target = PRC modifier = unstable_alliance } }			
 		}
