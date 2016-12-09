@@ -262,7 +262,6 @@ country_event = {
 				limit = { is_in_faction = no }
 			}
 		}
-		FRA = {	add_to_faction = ITA }
 		ITA = {
 			add_ai_strategy = {
 				type = alliance
@@ -369,7 +368,6 @@ country_event = {
 		ITA = {
 			add_political_power = -100
 			if = { limit = { is_faction_leader = yes }
-				add_to_faction = YUG
 				YUG = {
 					add_ai_strategy = {
 						type = alliance

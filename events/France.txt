@@ -178,12 +178,8 @@ country_event = {
 		tag = FRA
 		has_war_with = GER
 		16 = { is_controlled_by = GER }
-		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
 		surrender_progress > 0.7
-		GER = {
-			is_faction_leader = yes
-		}
 		NOT = {
 			has_civil_war = yes
 		}
@@ -604,7 +600,6 @@ country_event = {
 		ai_chance = { factor = 90 }
 		FRA = {
 			country_event = france.18
-			add_to_faction = ROOT
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -632,7 +627,6 @@ country_event = {
 	option = {
 		name = france.18.a
 		effect_tooltip = {
-			add_to_faction = FROM
 		}
 	}
 }
@@ -916,7 +910,6 @@ country_event = {
 				NOT = { is_in_faction_with = ENG }
 				NOT = { is_in_faction_with = GER }
 			}
-			add_to_faction = YUG
 			YUG = {
 				add_ai_strategy = {
 					type = alliance
@@ -976,7 +969,6 @@ country_event = {
 		}
 		if = {
 			limit = { NOT = { is_in_faction_with = ENG } }
-			ENG = { add_to_faction = FRA }
 			FRA = {
 				add_ai_strategy = {
 					type = alliance
