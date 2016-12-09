@@ -888,7 +888,6 @@ country_event = {
 			has_defensive_war = yes
 		}
 		JAP = { has_offensive_war = yes }
-		CHI = { is_faction_leader = yes }
 		NOT = {
 			has_war_with = CHI
 			is_puppet = yes
@@ -1016,7 +1015,6 @@ country_event = {
 		tag = CHI
 		has_global_flag = CHI_unite
 		NOT = { has_war_with = JAP }
-		is_faction_leader = yes
 	}
 
 	mean_time_to_happen = {
