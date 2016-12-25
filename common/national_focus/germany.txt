@@ -933,6 +933,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_in_faction_with = JAP
+				factor = 0 #GER-sempai has already noticed you!
+			}
 		}	
 		completion_reward = {
 			JAP = {
@@ -966,7 +970,11 @@ focus_tree = {
 		y = 1
 		cost = 10
 		ai_will_do = {
-			factor = 0.25
+			factor = 0.5
+			modifier = {
+				is_in_faction_with = JAP
+				factor = 0
+			}
 		}
 
 		available_if_capitulated = yes
@@ -1121,6 +1129,8 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_ussr_war_goal }
 		prerequisite = { focus = GER_italy_ally }
+
+
 		available = { 
 			is_puppet = no 
 			NOT = { has_war_with = TUR }
@@ -1128,6 +1138,7 @@ focus_tree = {
 				exists = yes
 				is_puppet = no
 			}
+
 			TUR = {
 				custom_trigger_tooltip = {
 					tooltip = GER_alone_or_peace_faction_tt
@@ -1135,6 +1146,7 @@ focus_tree = {
 				}
 			}
 		}
+
 		#bypass = {
 		#	OR = {
 		#		TUR = { is_in_faction_with = GER }
@@ -1147,6 +1159,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
+
+		#available_if_capitulated = no
 		completion_reward = {
 			TUR = {
 				add_opinion_modifier = { target = GER modifier = ger_tur_diplomacy_focus }
@@ -1777,7 +1791,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_czech_friend }
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 749999 } #80 div			
+			has_army_manpower = { size > 749999 } #80 div		
 		}
 		bypass = {
 			OR = {

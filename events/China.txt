@@ -1014,7 +1014,7 @@ country_event = {
 	trigger = {
 		tag = CHI
 		has_global_flag = CHI_unite
-		NOT = { has_war_with = JAP }
+		NOT = { has_war_with = JAP }		
 	}
 
 	mean_time_to_happen = {
@@ -1079,6 +1079,7 @@ country_event = {
 	trigger = {
 		tag = PRC
 		has_global_flag = PRC_restart_CHI_war
+		NOT = { has_war_together_with = CHI }
 	}
 
 	mean_time_to_happen = { days = 360 }
@@ -1138,14 +1139,9 @@ country_event = {
 		hidden_effect = {
 			every_state = {
 				limit = {
-					NOT = { is_owned_by = JAP }
-					OR = {
-						owner = {
-							is_puppet = no
-						}
-						owner = {
-							is_puppet_of = CHI
-						}
+					controller = {
+						original_tag = CHI
+						is_puppet_of = CHI
 					}
 					is_core_of = PRC
 					OR = {
