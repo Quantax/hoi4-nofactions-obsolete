@@ -178,12 +178,8 @@ country_event = {
 		tag = FRA
 		has_war_with = GER
 		16 = { is_controlled_by = GER }
-		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
 		surrender_progress > 0.7
-		GER = {
-			is_faction_leader = yes
-		}
 		NOT = {
 			has_civil_war = yes
 		}
@@ -604,7 +600,6 @@ country_event = {
 		ai_chance = { factor = 90 }
 		FRA = {
 			country_event = france.18
-			add_to_faction = ROOT
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -632,7 +627,6 @@ country_event = {
 	option = {
 		name = france.18.a
 		effect_tooltip = {
-			add_to_faction = FROM
 		}
 	}
 }
@@ -662,6 +656,7 @@ country_event = {
 	
 	option = {
 		custom_effect_tooltip = france.20.a_tt
+		set_country_flag = france_de_gaulle
 		hidden_effect =  {
 			retire_country_leader = yes
 		}
@@ -916,7 +911,6 @@ country_event = {
 				NOT = { is_in_faction_with = ENG }
 				NOT = { is_in_faction_with = GER }
 			}
-			add_to_faction = YUG
 			YUG = {
 				add_ai_strategy = {
 					type = alliance
@@ -976,7 +970,6 @@ country_event = {
 		}
 		if = {
 			limit = { NOT = { is_in_faction_with = ENG } }
-			ENG = { add_to_faction = FRA }
 			FRA = {
 				add_ai_strategy = {
 					type = alliance
@@ -1133,4 +1126,40 @@ country_event = {
 	option = {
 		name = france.30.a
 	}
+}
+
+# Édouard Daladier Resigns
+country_event = {
+    id = france.31
+    title = france.31.t
+    desc = france.31.d
+    picture = GFX_report_event_german_parade_paris
+ 
+    fire_only_once = yes
+ 
+    trigger = {
+        original_tag = FRA
+        has_government = democratic
+        has_global_flag = fall_of_france
+        NOT = { has_country_flag = france_de_gaulle }
+    } 
+
+    mean_time_to_happen = {
+        days = 7
+    }
+
+    option = {
+        name = france.31.a
+        retire_country_leader = yes
+        create_country_leader = {
+        	name = "Paul Reynaud"
+        	desc = "POLITICS_PAUL_REYNAUD_DESC"
+        	picture = "Portrait_France_Paul_Reynaud.dds"
+        	expire = "1965.1.1"
+        	ideology = liberalism
+        	traits = {
+        	      }
+            }
+        set_country_flag = daladier_resigned
+      }
 }

@@ -16,6 +16,15 @@ focus_tree = {
 		y = 0
 		cost = 10
 		icon = GFX_goal_generic_construction2
+
+		available = {
+		    is_puppet = no
+		    OR = {
+		    		NOT = { country_exists = MAN }
+		    		MAN = { is_puppet_of = JAP }
+		    	}
+		    }
+
 		bypass = {
 			NOT = { country_exists = SOV }
 		}
@@ -563,7 +572,21 @@ focus_tree = {
 		id = subvert_india_focus
 		prerequisite = { focus = found_own_faction_focus focus = axis_leanings_focus }
 		available = { 
-			has_war_with = ENG
+			OR = {
+				AND = {
+					RAJ = {
+						is_subject_of = ENG
+					}
+					has_war_with = ENG
+				}
+				AND = {
+					RAJ = {
+						is_subject = no
+					}
+					has_war_with = RAJ	
+				}
+			}
+			NOT = { RAJ = { has_government = fascism } }
 			OR = {
 				controls_state = 336
 				any_other_country = {
@@ -1651,7 +1674,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_technology = { suicide_craft = 1 }
+			custom_effect_tooltip = imperial_glory_focus_effect
+			hidden_effect = { set_technology = { suicide_craft = 1 } }
 		}
 	}
 

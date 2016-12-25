@@ -12,6 +12,8 @@ focus_tree = {
 	
 	default = no
 
+	continuous_focus_position = { x = 50 y = 1100 }
+
 	focus = {
 		id = ITA_ethiopian_war_logistics
 		icon = GFX_goal_generic_position_armies
@@ -1101,6 +1103,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+
 			add_tech_bonus = {
 				navy_experience = 25
 				name = bb_bonus
@@ -2202,7 +2205,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			GER = { 
-				controls_state = 16 
+				controls_state = 16
 			}
 			custom_trigger_tooltip = {
 			 tooltip = ITA_claims_on_france_tt

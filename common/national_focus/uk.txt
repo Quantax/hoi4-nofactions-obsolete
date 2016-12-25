@@ -1826,7 +1826,14 @@ focus_tree = {
 		id = uk_mediterranean_focus 
 		prerequisite = { focus = uk_service_focus }
 		available = {
-			447 = { is_owned_and_controlled_by = ENG }
+			447 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
 		} 
 		icon = GFX_goal_generic_construct_military
 		x = 29
@@ -1927,7 +1934,14 @@ focus_tree = {
 		}
 
 		available = {
-			447 = { is_owned_and_controlled_by = ENG }
+			447 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -2313,8 +2327,22 @@ focus_tree = {
 		prerequisite = { focus = uk_colonial_focus }
 		
 		available = {
-			336 = { is_owned_and_controlled_by = ENG }
-			326 = { is_owned_and_controlled_by = ENG }
+			336 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			326 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
 		}
 
 		icon = GFX_goal_generic_construct_civilian
@@ -2423,7 +2451,12 @@ focus_tree = {
 		completion_reward = {
 			640 = {
 				if = {
-					limit = { is_controlled_by = ROOT }
+					limit = { 
+						OR = { 
+							ENG = { controls_state = 640 }
+ 
+						}
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -2438,7 +2471,11 @@ focus_tree = {
 			}
 			325 = {
 				if = {
-					limit = { is_controlled_by = ROOT }
+					limit = { 
+					OR = { 
+							CHI = { controls_state = 325 }
+						}
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -2453,7 +2490,10 @@ focus_tree = {
 			}
 			601 = {
 				if = {
-					limit = { is_controlled_by = ROOT }
+					limit = { 
+						OR = { 
+							CHI = { controls_state = 601 }
+						} }
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -2547,7 +2587,16 @@ focus_tree = {
 		y = 4
 		cost = 10
 
-		available = {	336 = {	is_owned_and_controlled_by = ENG }	}
+		available = {
+			336 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -2563,6 +2612,19 @@ focus_tree = {
 					province = 12299
 					instant_build = yes
 				}
+				if = {
+					limit = {
+						CONTROLLER = {
+							NOT = { tag = ENG }
+						}
+					}
+					CONTROLLER = {
+						add_autonomy_ratio = {
+							value = -0.02
+							localization = singapore_focus
+						}
+					}
+				}
 			}
 		}
 	}
@@ -2576,7 +2638,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = {	336 = {	is_owned_and_controlled_by = ENG }	}
+		available = {
+			336 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
+
 
 		available_if_capitulated = yes
 
@@ -2589,8 +2661,7 @@ focus_tree = {
 			}
 		}
 
-		completion_reward = { 
-
+		completion_reward = {
 			336 = {
 				add_building_construction = {
 					type = bunker
@@ -2602,6 +2673,19 @@ focus_tree = {
 					type = anti_air_building
 					level = 2
 					instant_build = yes
+				}
+				if = {
+					limit = {
+						CONTROLLER = {
+							NOT = { tag = ENG }
+						}
+					}
+					CONTROLLER = {
+						add_autonomy_ratio = {
+							value = -0.02
+							localization = sp_landward_forts_focus
+						}
+					}
 				}
 			}
 		}
@@ -2616,7 +2700,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = {	336 = {	is_owned_and_controlled_by = ENG }	}
+		available = {
+			336 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
 
 		available_if_capitulated = yes
 
@@ -2640,7 +2733,20 @@ focus_tree = {
 					province = 7342
 					instant_build = yes
 				}
-			}			
+				if = {
+					limit = {
+						CONTROLLER = {
+							NOT = { tag = ENG }
+						}
+					}
+					CONTROLLER = {
+						add_autonomy_ratio = {
+							value = -0.02
+							localization = peninsular_focus
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -2653,7 +2759,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}
-		available = { 326 = { is_owned_and_controlled_by = ENG } }
+		available = { 
+			326 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
 
 		available_if_capitulated = yes
 
@@ -2678,7 +2793,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = { 326 = { is_owned_and_controlled_by = ENG } }
+		available = {
+			326 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
 
 		available_if_capitulated = yes
 
@@ -2718,7 +2842,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = { 326 = { is_owned_and_controlled_by = ENG } }
+		available = {
+			326 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+		}
 
 		available_if_capitulated = yes
 
@@ -2880,6 +3013,10 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_india_focus
+				}
 			}
 		}
 
@@ -2934,7 +3071,10 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_india_focus_1IC
 				}
-				
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_india_focus
+				}
 			}
 		}
 	}
@@ -2943,9 +3083,19 @@ focus_tree = {
 		id = uk_free_india_focus 
 		prerequisite = { focus = uk_india_focus }
 		available = {
-			has_global_flag = indian_national_army_setup
-			RAJ = {
-				is_puppet_of = ENG
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+				date > 1943.10.01
+				RAJ = {
+					is_subject_of = ENG
+					has_war = no
+				}
+				else = {				
+					has_global_flag = indian_national_army_setup
+					RAJ = {
+						is_puppet_of = ENG
+					}
+				}
 			}
 		} #counters JAP's indian army focus
 		icon = GFX_goal_generic_improve_relations
@@ -2956,18 +3106,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_global_flag = indian_independence_promised
-			add_timed_idea = { idea = indian_independence_promised_idea days = 1460 }
 			if = {
-				limit = {
-					RAJ = {
-						has_idea = RAJ_azad_hind
+				limit = { has_dlc = "Together for Victory" }
+				RAJ = {
+					set_autonomy = {
+						target = RAJ
+						autonomy_state = autonomy_free
 					}
 				}
-				RAJ = {
-					remove_ideas = {
-						RAJ_azad_hind
-					}
+				else = {					
+					set_global_flag = indian_independence_promised
+					add_timed_idea = { idea = indian_independence_promised_idea days = 1460 }
+					RAJ = {
+						remove_ideas = RAJ_azad_hind
+					}				
 				}
 			}
 		}
@@ -3043,6 +3195,10 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_australia_focus
+				}
 			}
 		}
 
@@ -3115,6 +3271,10 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_australia_focus_1dockyard
 				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_australia_focus
+				}
 			}
 		}
 	}
@@ -3184,6 +3344,10 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_new_zealand_focus
 				}
 			}
 		}
@@ -3257,6 +3421,10 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_new_zealand_focus_1dockyard
 				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_new_zealand_focus
+				}
 			}
 		}
 	}
@@ -3326,6 +3494,10 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_canada_focus
 				}
 			}
 		}
@@ -3399,6 +3571,10 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_canada_focus_1dockyard
 				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_canada_focus
+				}
 			}
 		}
 	}
@@ -3415,7 +3591,6 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-
 		
 		bypass = {
 			SAF = {
@@ -3468,6 +3643,10 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_south_africa_focus
 				}
 			}
 		}
@@ -3540,6 +3719,10 @@ focus_tree = {
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_south_africa_focus_1dockyard
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_south_africa_focus
 				}
 			}
 		}
