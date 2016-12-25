@@ -2621,7 +2621,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
 			create_wargoal = {
 				type = annex_EVERYTHING#!!!!!
 				target = AST
@@ -2753,7 +2752,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
 			random_country = {
 				limit = {
 					NOT = { ROOT = { is_faction_leader = yes } }

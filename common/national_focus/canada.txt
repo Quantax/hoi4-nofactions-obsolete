@@ -2616,7 +2616,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = ENG
+			NOT = { has_war_with = ENG }
 			is_in_tech_sharing_group = commonwealth_research
 		}
 		
@@ -3017,7 +3017,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
 			USA = {
 				country_event = { id = tfv_canada.1 }
 			}
@@ -3389,7 +3388,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
 			random_country = {
 				limit = {
 					original_tag = MEX
@@ -3431,7 +3429,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
 			create_wargoal = {
 				type = annex_everything
 				target = USA
@@ -3753,9 +3750,7 @@ focus_tree = {
 
 		}
 
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-		}
+		completion_reward = { }
 	}
 
 	focus = {

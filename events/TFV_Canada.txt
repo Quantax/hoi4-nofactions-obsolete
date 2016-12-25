@@ -22,10 +22,7 @@ country_event = {
 			base = 100
 		}
 		
-		effect_tooltip = {
-			create_faction = "north_american_alliance"
-			add_to_faction = CAN
-		}
+		effect_tooltip = { }
 		hidden_effect = {
 			CAN = {
 				country_event = { id = tfv_canada.2 }
@@ -58,11 +55,6 @@ country_event = {
 	
 	option = {
 		name = tfv_canada.2.a
-		
-		USA = {
-			create_faction = "north_american_alliance"
-			add_to_faction = CAN
-		}
 		
 		news_event = { id = news.246 hours = 6 }
 	}
@@ -98,9 +90,7 @@ country_event = {
 			base = 100
 		}
 		
-		effect_tooltip = {
-			add_to_faction = CAN
-		}
+		effect_tooltip = { }
 		
 		hidden_effect = {
 			CAN = {
@@ -134,9 +124,6 @@ country_event = {
 	
 	option = {
 		name = tfv_canada.11.a
-		SOV = {
-			add_to_faction = CAN
-		}
 	}
 }
 
@@ -170,9 +157,7 @@ country_event = {
 			base = 100
 		}
 		
-		effect_tooltip = {
-			add_to_faction = CAN
-		}
+		effect_tooltip = { }
 		
 		hidden_effect = {
 			CAN = {
@@ -186,10 +171,6 @@ country_event = {
 		
 		ai_chance = {
 			base = 0
-		}
-		
-		GER = {
-			add_to_faction = CAN
 		}
 		
 		hidden_effect = {
@@ -211,9 +192,6 @@ country_event = {
 	option = {
 		name = tfv_canada.21.a # Germany accepts Canadian membership
 		
-		GER = {
-			add_to_faction = CAN
-		}
 		if = {
 			limit = {
 				GER = {
@@ -383,13 +361,11 @@ country_event = {
 		
 		effect_tooltip = {
 			CAN = {
-				create_faction = "northern_sovereignty_coalition"
 				random_country = {
 					limit = {
 						original_tag = MEX
 						has_government = fascism
 					}
-					CAN = { add_to_faction = PREV }
 				}
 			}
 			add_state_claim = 375 # Texas
@@ -434,13 +410,11 @@ country_event = {
 	option = {
 		name = tfv_canada.41.a
 		
-		create_faction = "northern_sovereignty_coalition"
 		random_country = {
 			limit = {
 				original_tag = MEX
 				has_government = fascism
 			}
-			CAN = { add_to_faction = PREV }
 		}
 		
 		MEX = {

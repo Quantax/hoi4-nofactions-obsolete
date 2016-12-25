@@ -252,10 +252,7 @@ country_event = {
 	
 	option = {
 		name = tfv_australia.31.a
-		
-		create_faction = "south_west_pacific_initiative"
-		add_to_faction = INS
-		
+
 		news_event = { id = news.244 hours = 6 }
 	}
 }
@@ -277,14 +274,11 @@ country_event = {
 
 		effect_tooltip = {
 			AST = {
-				create_faction = "south_west_pacific_initiative"
-				add_to_faction = USA
 				
 				if = {
 					limit = {
 						has_country_flag = INS_is_a_puppet
 					}
-					add_to_faction = INS
 				}
 			}
 		}
@@ -319,14 +313,10 @@ country_event = {
 	option = {
 		name = tfv_australia.33.a
 		
-		create_faction = "south_west_pacific_initiative"
-		add_to_faction = USA
-		
 		if = {
 			limit = {
 				has_country_flag = INS_is_a_puppet
 			}
-			add_to_faction = INS
 		}
 		
 		news_event = { id = news.245 hours = 6 }
@@ -346,9 +336,6 @@ country_event = {
 		trigger = {
 			has_country_flag = INS_is_a_puppet
 		}
-		
-		create_faction = "south_west_pacific_initiative"
-		add_to_faction = INS
 		
 		news_event = { id = news.244 hours = 6 }
 	}
@@ -428,9 +415,7 @@ country_event = {
 			base = 100
 		}
 		
-		effect_tooltip = {
-			add_to_faction = AST
-		}
+		effect_tooltip = { }
 		hidden_effect = {
 			AST = {
 				country_event = { id = tfv_australia.51 }
@@ -463,9 +448,6 @@ country_event = {
 	
 	option = {
 		name = tfv_australia.51.a
-		SOV = {
-			add_to_faction = AST
-		}
 		news_event = { hours = 6 id = news.239 }
 	}
 }
@@ -678,8 +660,6 @@ country_event = {
 					}
 				}
 				
-				create_faction = "western_pacific_sphere"
-				add_to_faction = JAP
 			}
 		}
 		hidden_effect = {
@@ -728,9 +708,6 @@ country_event = {
 				JAP = { transfer_state = 668 }
 			}
 		}
-		
-		create_faction = "western_pacific_sphere"
-		add_to_faction = JAP
 		
 		news_event = { id = news.243 hours = 6 }
 	}
