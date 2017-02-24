@@ -4131,7 +4131,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ENG = { remove_from_faction = ROOT }
 			set_autonomy = {
 				target = AST
 				autonomy_state = autonomy_free
@@ -4210,6 +4209,9 @@ focus_tree = {
 				}
 			}
 			NOT = { has_war_together_with = ENG }
+			JAP = {
+				has_government = ROOT
+			}
 		}
 		
 		bypass = {

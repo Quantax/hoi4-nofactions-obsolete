@@ -1,4 +1,4 @@
-[b][u]ATTENTION! Update 5 is the first, rather crude update for the mod to work with HOI v1.3.1. All factions should be disabled but no modifications to are yet made to the new features added in 1.3. This means some of those features, like tech bonuses, are non-functional![/b][/u]
+[b][u]ATTENTION! All factions should be disabled but no modifications to are yet made to the new features added in 1.3. This means some of those features, like tech bonuses, are non-functional![/b][/u]
 
 This mod removes all starting factions and the abilities to create new ones.
 
@@ -9,17 +9,17 @@ No balance work has been done yet, and AI might break or do silly things because
 ---
 
 [h1]What this mod does:[/h1]
- - Removes starting factions
+ - Removes starting factions.
  - Removes faction creating ability from national spirits of Germany, USSR, UK and USA.
  - Removes all faction creation from national focuses of Australia, Canada, France, Italy, Japan, New Zealand, Poland, South Africa and the generic focus tree.
- - Removes all faction creating from events, such as unified China
+ - Removes all faction creating from events, such as unified China.
 
 ---
 
 [h1]Known issues:[/h1]
- - Some of the features added HOI 1.3 are essentially non-functional
- - Some events will not trigger
- - Some national focuses, especially for France, are pretty much useless
+ - Some of the features added HOI 1.3 are essentially non-functional.
+ - Some events will not trigger.
+ - Some national focuses, especially for France, are pretty much useless.
 
 ---
 [h1]Reporting issues:[/h1]
@@ -28,6 +28,7 @@ No balance work has been done yet, and AI might break or do silly things because
 ---
 
 [h1]Updates:[/h1]
+ - Update 6: Updated to HOI 1.3.2.
  - Update 5: Updated to HOI 1.3.1, removed faction creating from Australia, Canada, New Zealand and South Africa. Fixed Japan being able to create factions.
  - Update 4: Removed faction creation from Japan's national focuses.
  - Update 3: Updated version support to 1.2.1.
@@ -38,9 +39,10 @@ No balance work has been done yet, and AI might break or do silly things because
 ---
 
 [h1]Mod compatibility:[/h1]
+ - NOT compatible with ANY total conversion mod
  - NOT compatible with mods that modify national focus trees for Australia, Canada, France, Germany, Italy, Japan, New Zealand, Poland, South Africa, UK or the generic focus tree.
  - NOT compatible with mods that modify existing national spirits of Germany, USSR, UK and USA.
  - NOT compatible with mods that modify existing events for Australia, Canada, China, France, Germany or Italy.
- - NOT compatible with mods that modify starting conditions for China, Germany, USSR or UK (i.e. the major faction leaders)
+ - NOT compatible with mods that modify starting conditions for China, Germany, USSR or UK (i.e. the major faction leaders).
 
  - Compatible with other focus mods that modify focus trees not listed above, i.e. most minor nations. Be aware that balance issues are likely since modified nation(s) is most likely the only one able to create factions.

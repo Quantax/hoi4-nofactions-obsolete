@@ -1103,9 +1103,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			navy_experience = 25
 			add_tech_bonus = {
-				navy_experience = 25
 				name = bb_bonus
 				bonus = 0.5
 				uses = 2
@@ -2204,6 +2203,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
 			is_puppet = no
+			NOT = { has_war_with = GER }
 			GER = { 
 				controls_state = 16
 			}

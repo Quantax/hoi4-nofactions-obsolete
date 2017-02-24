@@ -654,9 +654,11 @@ country_event = {
 					}
 					
 					else = {
-						JAP = { transfer_state = 334 }
-						JAP = { transfer_state = 673 }
-						JAP = { transfer_state = 668 }
+						JAP = {
+							transfer_state = 334
+							transfer_state = 673
+							transfer_state = 668
+						}
 					}
 				}
 				
