@@ -39,6 +39,7 @@ No balance work has been done yet, and AI might break or do silly things because
 ---
 
 [h1]Mod compatibility:[/h1]
+ - NOT compatible with ANY total conversion mod
  - NOT compatible with mods that modify national focus trees for Australia, Canada, France, Germany, Italy, Japan, New Zealand, Poland, South Africa, UK or the generic focus tree.
  - NOT compatible with mods that modify existing national spirits of Germany, USSR, UK and USA.
  - NOT compatible with mods that modify existing events for Australia, Canada, China, France, Germany or Italy.
